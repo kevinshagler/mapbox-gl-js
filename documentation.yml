@@ -4,22 +4,30 @@ toc:
   - supported
   - version
   - setRTLTextPlugin
-  - name: Geography
+  - AnimationOptions
+  - name: Geography & Geometry
     description: |
-      These are Mapbox GL JS's ways of representing locations
-      and areas on the sphere.
+      `LngLat` and `LngLatBounds` represent points and rectanges in geographic
+      coordinates. `Point` represents points in screen coordinates.
+  - CameraOptions
   - LngLat
+  - LngLatLike
   - LngLatBounds
-  - name: Controls
+  - LngLatBoundsLike
+  - Point
+  - PointLike
+  - name: User Interface
     description: |
-      Controls add new functionality and user interface
-      elements to the map.
+      Controls, markers, and popups add new user interface elements to the map.
+  - IControl
   - NavigationControl
   - GeolocateControl
   - AttributionControl
   - ScaleControl
-  - FullscreenControl
-  - name: Handlers
+  - LogoControl
+  - Popup
+  - Marker
+  - name: User Interaction Handlers
     description: |
       Handlers add different kinds of interactivity to the map -
       mouse interactivity, touch interactions, and other
@@ -39,36 +47,12 @@ toc:
   - VideoSource
   - ImageSource
   - CanvasSource
-  - name: Options
-    description: |
-      These shared option can be supplied as arguments to various methods
-      on a Map object and other functions.
-  - CameraOptions
-  - AnimationOptions
-  - StyleOptions
-  - name: Overlays
-  - Popup
-  - Marker
   - name: Events
     description: |
-      This event functionality is used by Mapbox GL JS itself
-      and can be useful to other developers who want to create
-      [IControls](#IControl) or other extensions.
+      `Evented` is Mapbox GL JS's event system. It is sometimes extended when
+      implementing [IControls](#IControl) and other extensions.
   - Evented
   - MapMouseEvent
   - MapTouchEvent
   - MapBoxZoomEvent
   - MapDataEvent
-  - name: Types
-    description: |
-      These are types used in the documentation above to describe arguments,
-      properties, and return values.
-  - LngLatLike
-  - LngLatBoundsLike
-  - Point
-  - PointLike
-  - name: Interfaces
-    description: |
-      Interfaces are specifications for plugin authors to follow in order to
-      create new extensions to Mapbox GL JS
-  - IControl

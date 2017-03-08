@@ -4,32 +4,13 @@ Mapbox GL JS is a JavaScript library that renders interactive maps from vector t
 
 In addition to GL JS, this repository contains code, issues, and test fixtures that are common to both GL JS and the native SDKs. For code and issues specific to the native SDKs, see the [mapbox/mapbox-gl-native](https://github.com/mapbox/mapbox-gl-native/) repository.
 
-- [Getting started](https://www.mapbox.com/mapbox-gl-js/api/)
+- [Getting started](https://github.com/mapbox/mapbox-gl-js/blob/master/INSTALL.md)
 - [API documentation](https://www.mapbox.com/mapbox-gl-js/api)
 - [Examples](https://www.mapbox.com/mapbox-gl-js/examples/)
 - [Style documentation](https://www.mapbox.com/mapbox-gl-style-spec)
 - [Open source styles](https://github.com/mapbox/mapbox-gl-styles)
-- [Plugins](https://www.mapbox.com/mapbox-gl-js/plugins)
 - [Roadmap](https://www.mapbox.com/mapbox-gl-js/roadmap/)
 - [Contributor documentation](https://github.com/mapbox/mapbox-gl-js/blob/master/CONTRIBUTING.md)
 
 [<img width="981" alt="Mapbox GL gallery" src="https://cloud.githubusercontent.com/assets/281306/14547142/a3c98294-025f-11e6-92f4-d6b0f50c8e89.png">](https://www.mapbox.com/gallery/)
 
-## Using Mapbox with [CSP](https://developer.mozilla.org/en-US/docs/Web/Security/CSP)
-
-You may use a Content Security Policy to restrict the resources your page has
- access to, as a way of guarding against Cross-Site Scripting and other types of
- attacks. If you do, Mapbox GL JS requires the following directives:
-
-```
-child-src blob: ;
-img-src data: blob: ;
-script-src 'unsafe-eval' ;
-```
-
-Requesting styles from Mapbox or other services will require additional
- directives. For Mapbox, you can use this `connect-src` setting:
-
-```
-connect-src https://*.tiles.mapbox.com https://api.mapbox.com
-```
